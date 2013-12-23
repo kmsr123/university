@@ -1,0 +1,27 @@
+
+
+<%= form_tag teachers_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<%end %>
+
+
+
+
+<% @students.each do |t| %>
+
+<%= t.email %>
+
+<%#= t.gender %>
+<%#= t.phone %>
+
+
+<%= link_to "show", student_path(t) %>&nbsp&nbsp                             
+<%= link_to "edit", edit_student_path(t) %>&nbsp&nbsp                            
+<%= button_to 'destroy', t, :method => :delete %> &nbsp&nbsp                                         
+<% end %>
+<br/>
+<%= link_to "newteacher", new_teacher_path %><br/>
+<%= link_to "back", root_path %>

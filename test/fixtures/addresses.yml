@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  state: MyString
+  district: MyString
+  town: MyString
+  zipcode: MyString
+  village: MyString
+  addressable_id: 1
+  addressable_type: MyString
+
+two:
+  state: MyString
+  district: MyString
+  town: MyString
+  zipcode: MyString
+  village: MyString
+  addressable_id: 1
+  addressable_type: MyString

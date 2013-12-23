@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  full_name: MyString
+  fathername: MyString
+  gender: MyString
+  dob: 2013-11-20
+  age: 1
+  class: MyString
+  fee: 9.99
+  phono: 1
+  email: MyString
+
+two:
+  full_name: MyString
+  fathername: MyString
+  gender: MyString
+  dob: 2013-11-20
+  age: 1
+  class: MyString
+  fee: 9.99
+  phono: 1
+  email: MyString

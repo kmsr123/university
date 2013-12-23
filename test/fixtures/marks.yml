@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  os: 1
+  c_language: 1
+  dbms: 1
+  cn: 1
+  ruby: 1
+  selinium: 1
+
+two:
+  os: 1
+  c_language: 1
+  dbms: 1
+  cn: 1
+  ruby: 1
+  selinium: 1

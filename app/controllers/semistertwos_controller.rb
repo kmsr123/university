@@ -1,0 +1,2 @@
+class SemistertwosController < ApplicationController
+end

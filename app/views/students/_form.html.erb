@@ -1,0 +1,61 @@
+
+   <%= form_for @student, :html => { :multipart => true } do |f| %>
+  
+   <%= f.label :first_name %>:
+   <%= f.text_field :first_name %><br />
+
+   <%= f.label :last_name %>:
+   <%= f.text_field :last_name %><br />
+   
+   <%= f.label :photo%>
+   <%= f.file_field :photo %><br />
+   
+
+    <%= f.label :father_name %>
+   <%= f.text_field :fathername%><br />
+
+   <%= f.label :full_name %>:
+   <%= f.hidden_field :full_name %><br />
+
+   <%= f.label :gender %>
+   <%= f.radio_button(:gender, "male") %>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <%= f.radio_button( :gender, "female")%><br/>
+
+   <%= f.label :date_of_birth %>
+   <%= f.number_field :dob %><br/>
+
+   <%= f.label :age %>
+   <%= f.date_field :age %><br/>
+
+   <%= f.label :section %>
+   <%= f.select(:section, [[1,'cse'],[2,'ece'],[3,'eee']])%><br/>
+   
+
+   <%= f.label :email %>
+   <%= f.email_field(:email, :placeholder => "plese enter madhukosuri89@gmail.com")%>
+   <br/>
+
+   <%= fields_for @address, :address_attributes  do |t| %>
+
+   <%= t.label :state %>:
+   <%=  t.text_field :state %><br><br/>
+ 
+   <%= t.label :District %>:
+   <%= t.select(:district, [[1,'cse'],[2,'ece'],[3,'eee']]  )%><br/>
+
+   <%= t.label :town%>
+   <%= t.text_field :town %><br/>
+
+   <%= t.label :zipcode %>
+   <%= t.text_field :zipcode %><br/>
+
+
+<% end %>
+
+<%= f.submit :class => "btn-primary" %>
+  
+<% end %>
+
+
+
+

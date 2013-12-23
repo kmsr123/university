@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  semister_id: 1
+  c_language: 1
+  ruby: 1
+  rails: 1
+  datastructers: 1
+  java: 1
+
+two:
+  semister_id: 1
+  c_language: 1
+  ruby: 1
+  rails: 1
+  datastructers: 1
+  java: 1

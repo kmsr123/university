@@ -1,0 +1,66 @@
+      
+   <h1> Creating new Teacher </h1>
+
+
+   <%= form_for @teacher, :html => { :multipart => true } do |f| %>
+
+   <%= f.label :full_name %>
+   <%= f.text_field :full_name %><br/>
+
+   <%= f.label :photo %>
+   <%= f.file_field :photo %><br />
+
+   
+   <%= f.label :gender %>
+   <%= f.radio_button(:gender, "male") %>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+   <%= f.radio_button(:gender, "female")%><br/>
+
+   <%= f.label :experience %>
+   <%= f.number_field :experience %> <br/>
+      
+   
+
+   <%= f.label :salary %>
+   <%= f.text_field :salary %><br/>
+   
+   <%= f.label :subjects %>
+   <%= f.check_box :subjects, { :multiple => true }, 'java', nil %>JAVA
+   <%= f.check_box :subjects, { :multiple => true }, 'dbms', nil %>OOP
+   <%= f.check_box :subjects, { :multiple => true }, 'OS', nil %>OS
+   
+  
+
+ <br/>  <%= f.label :phone %>
+   <%= f.phone_field(:phone, :placeholder => "plese enter ur 10 digit mobile no")%><br/>
+   
+   <%= f.label :email %>
+   <%= f.email_field(:email, :placeholder => "plese enter madhukosuri89@gmail.com")%>
+   <br/>
+
+   <%= fields_for @address do |t| %>
+
+    <%= t.label :state%>
+   <%=  t.text_field :state %><br><br/>
+ 
+   <%= t.label :District %>:
+   <%= t.select(:district, [[1,'cse'],[2,'ece'],[3,'eee']]  )%><br/>
+
+   <%= t.label :town%>
+   <%= t.text_field :town %><br/>
+
+   <%= t.label :zipcode %>
+   <%= t.text_field :zipcode %>
+
+
+<% end %>
+<br/>
+<%= f.submit :class => "btn-primary" %>
+<% end %>
+
+
+
+
+
+
+
+

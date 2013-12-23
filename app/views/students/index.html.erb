@@ -1,0 +1,25 @@
+<h2> this is index page </h2>
+<table>
+<% @students.each do |t| %>
+
+<%= t.dob %>
+<%= t.age %>
+<%= t.gender %>
+<%= t.email %>
+
+<%= link_to 'show' , { :action => "show" , :id => t.id } %>&nbsp &nbsp &nbsp                          
+<%= link_to 'edit', edit_student_path(t.id) %> &nbsp &nbsp &nbsp                        
+<%= link_to 'destroy', t ,:method => :delete , :class=>:destroy  %><br>  &nbsp &nbsp &nbsp 
+
+
+<%= link_to "Printable Student (PDF)",  student_path(t, :format => 'pdf') %> 
+
+<% end %>
+<br/>
+<%= link_to "newstudent", new_student_path %><br/>
+
+<%= link_to "back", root_path %>
+
+</table>
+
+ 
